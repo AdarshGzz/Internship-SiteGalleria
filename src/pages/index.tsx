@@ -2,7 +2,7 @@ import Head from 'next/head'
 // import { Inter } from 'next/font/google'
 import Button from '@mui/material/Button'
 // import styles from '@/styles/Home.module.css'
-
+import UpperNav from './UpperNav';
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,20 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex flex-col'>
-        <h1 className="text-3xl font-bold underline">
-          <div>
-            <Button variant="contained">Hello World</Button>
-          </div>
-          <div>
-            <Button variant="contained">Hello World</Button>
-          </div>
-          <div>
-            <Button variant="contained">Hello World</Button>
-          </div>
-          <div>
-            <Button variant="contained">Hello World</Button>
-          </div>
-        </h1>
+        <UpperNav/>
       </main>
     </>
   )
