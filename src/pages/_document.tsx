@@ -9,7 +9,7 @@ import Document, {
 } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
-import { theme, roboto } from './theme';
+import { theme, roboto } from '../../Themes/theme';
 import createEmotionCache from './createEmotionCache';
 
 interface MyDocumentProps extends DocumentProps {
