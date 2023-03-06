@@ -13,6 +13,7 @@
     "@emotion/server": "^11.10.0",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
+    "@mui/joy": "^5.0.0-alpha.69",
     "@mui/material": "^5.11.11",
     "@mui/styled-engine-sc": "^5.11.11",
     "@mui/utils": "^5.11.11",
@@ -32,5 +33,11 @@
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
