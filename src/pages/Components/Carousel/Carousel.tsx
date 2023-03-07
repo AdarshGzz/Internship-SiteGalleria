@@ -34,8 +34,22 @@ const Carousel = () => {
   return (
     <div>
           <CarouselBox url = {url}>
+            <Box
+             sx={{
+                margin:5,
+                display:'flex',
+                justifyContent:'space-between',
+                alignItems: 'center',
+                paddingTop: 30,
+                paddingLeft: 5,
+                paddingRight: 5,
+                backgroundSize:'cover',
+                backgroundRepeat: 'no-repeat',
+             }}
+            >
+              <CarouselBtn onclick={() => updateIndex(activeIdx - 1)}> <BsFillCaretLeftFill /> </CarouselBtn>
               <CarouselBtn onclick={() => updateIndex(activeIdx + 1)}> <BsFillCaretRightFill/> </CarouselBtn>
-              <CarouselBtn onclick={() => updateIndex(activeIdx - 1)}> <BsFillCaretLeftFill/> </CarouselBtn>
+            </Box>
           </CarouselBox>
     </div>
   )

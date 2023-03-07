@@ -14,11 +14,9 @@ export default function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <Header/> */}
+        <Header/>
         <div>
-          <Carousel>
-            <CarouselItem>Item1</CarouselItem>
-          </Carousel>
+          <Carousel/>
           {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam maxime quisquam consectetur possimus, dolorum suscipit reiciendis debitis atque tempora ab alias doloremque quidem facilis eius. Rerum id quo officiis! */}
         </div>
       </main>
