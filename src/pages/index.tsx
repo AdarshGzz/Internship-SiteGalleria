@@ -1,8 +1,10 @@
-import Head from 'next/head'
-import Header from './Components/Header'
+import Head from 'next/head';
+import Header from './Components/Header';
+import Carousel, { CarouselItem } from './Components/Carousel/Carousel';
+import MenuButton from './Components/HeaderComponents/NavigationBarComponents/MenuButton';
 
 
-export default function Home() {
+export default function Home(): JSX.Element {
   return (
     <>
       <Head>
@@ -12,48 +14,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header/>
+        {/* <Header/> */}
         <div>
-          <p>
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-            Whether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay 
-            when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not 
-            there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is scrollingWhether or not there is a little delay when the user is
-          </p>
+          <Carousel>
+            <CarouselItem>Item1</CarouselItem>
+          </Carousel>
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quibusdam maxime quisquam consectetur possimus, dolorum suscipit reiciendis debitis atque tempora ab alias doloremque quidem facilis eius. Rerum id quo officiis! */}
         </div>
       </main>
     </>
-  )
+  );
 }
