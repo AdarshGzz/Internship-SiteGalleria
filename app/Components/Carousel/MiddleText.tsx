@@ -4,16 +4,20 @@ import WhiteGreenHeading from './MiddleTextComp/WhiteGreenHeading';
 import SearchField from './MiddleTextComp/SearchField';
 import { BiSearch } from 'react-icons/bi';
 import SvgSets from './MiddleTextComp/SvgSets';
+import Grid from '@mui/material/Grid';
+
+
+
 const MiddleText: React.FC = () => {
     return (
         <div>
             <Box
                 sx={{
-                    width:"100%",
-                    marginTop: '-5rem',
-                    gap:'1rem',
-                    display:'flex',
-                    justifyContent: 'center',
+                    width: "100%",
+                    marginTop: '5rem',
+                    gap: '1rem',
+                    display: 'flex',
+                    justifyContent: 'space-around',
                     alignItems: 'center',
                     flexDirection: 'column'
                 }}
@@ -26,24 +30,31 @@ const MiddleText: React.FC = () => {
                 >
                     More than 6.500 online courses
                 </Typography>
-               <Box
-                 sx={{
-                    width:"100%",
-                    display:'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                 }}
+                <Box
+                    sx={{
+                        width: "100%",
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        paddingBottom:'3rem'
+
+                    }}
                 >
                     <SearchField placeholder={'what do you want to learn today?'}>
-                        <BiSearch/>Search
+                        <BiSearch />Search
                     </SearchField>
-               </Box>
-               <Box
-                 sx={{
-                    display:'flex',
-                    flexDirection:'row',
-                 }}
-               >
+                </Box>
+                <Box
+                    sx={{
+                        // marginTop:'6rem',
+                        marginTop:{ xs:'2rem' ,sm:'2rem', md:'8rem',lg:'6rem',xl:'6rem' },
+                        display: 'flex',
+                        // flexDirection:'row',
+                        flexDirection:{ xs:'column' ,sm:'column', md:'row' },
+                        // gap:'10rem',
+                        gap:{ xs:'2rem' ,sm:'2rem', md:'8rem',lg:'10rem',xl:'10rem' },
+                    }}
+                >
                     <SvgSets title={'100,000 online courses'} subtitle={'Explore a variety of fresh topics'}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none" viewBox="0 0 50 50">
                             <g fill="#fff" clipPath="url(#clip0_197_19370)">
@@ -70,8 +81,7 @@ const MiddleText: React.FC = () => {
                             <path fill="#fff" d="M27.685 38.584a3.507 3.507 0 00-3.454-5.686 3.54 3.54 0 00-1.425.682 3.497 3.497 0 00-.492 5l-.908 3.178a1.564 1.564 0 001.505 1.992h4.178a1.563 1.563 0 001.505-1.992l-.909-3.174zm-4.774 3.603l1.031-3.609a.781.781 0 00-.234-.798 1.923 1.923 0 01-.66-1.452 1.944 1.944 0 01.734-1.527 1.966 1.966 0 011.685-.373 1.944 1.944 0 01.824 3.352.78.78 0 00-.235.798l1.033 3.61h-4.178z"></path>
                         </svg>
                     </SvgSets>
-               </Box>
-
+                </Box>
             </Box>
         </div>
     )

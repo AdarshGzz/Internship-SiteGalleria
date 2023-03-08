@@ -12,6 +12,8 @@ const SvgSets:React.FC<Props> = ({title,subtitle,children}) => {
     <div>
           <Box
               sx={{
+                //   height:'4rem',
+                //   width:'14rem',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'center',
@@ -34,7 +36,8 @@ const SvgSets:React.FC<Props> = ({title,subtitle,children}) => {
                   sx={{
                       color: '#ffffffde',
                       fontSize: '.9rem',
-                      paddingTop: '.3rem'
+                      paddingTop: '.3rem',
+                      flexWrap:'wrap'
                   }}
               >
                   {subtitle}
