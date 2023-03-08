@@ -12,7 +12,7 @@ const WhiteGreenHeading: React.FC<Props> = ({whiteTxt,greenTxt}) => {
     <div>
           <Box
               sx={{
-                  flexWrap: 'nowrap'
+                 padding:'1rem'
               }}
           >
               <Typography

@@ -13,8 +13,8 @@ const CarouselBox: FC<Props> = ({ children, url }) => {
         <div>
             <Box
                 sx={{
-                    width: "100%",
-                    height: { xs:'100vh' ,sm:'110vh', md:'80vh',lg:'110vh',xl:'110vh' },
+                    width: "100vw",
+                    height: { xs:'120vh' ,sm:'110vh', md:'110vh',lg:'100vh',xl:'100vh' },
                     backgroundImage: `url(${url})`,
                 }}
             >

@@ -6,25 +6,27 @@ interface Props{
     children: React.ReactNode;
 }
 
-const SearchField:React.FC<Props> = ({placholder,children}) => {
+const SearchField:React.FC<Props> = ({placeholder,children}) => {
   return (
     <div>
           <Box
               sx={{
                   padding: '1rem',
-                  width: '34rem',
-                  height: '4.2rem',
+                  width: { xs: '22rem', sm: '25rem', md: '30rem', lg: '32rem', xl: '34rem' },
+                  height: { xs: '3rem', sm: '3rem', md: '4.2rem', lg: '4.2rem', xl: '4.2rem' },
                   overflow: 'hidden',
                   borderRadius: '10rem',
                   display: 'flex',
                   backgroundColor: '#fff',
                   justifyContent: 'center',
-                  alignItems: 'center'
+                  alignItems: 'center',
+                  border:'3px',
+                  borderColor:'#fff',
               }}
           >
               <TextareaAutosize
                   maxRows={1}
-                  placeholder={`${placholder}`}
+                  placeholder={`${placeholder}`}
                   style={{ width: '35rem', height: '4rem', display: 'flex', textAlign: 'left', alignItems: 'center', justifyContent: 'center', padding: '1.2rem', fontSize: '1rem', outline: 'none' }}
               />
               <Box
@@ -34,21 +36,44 @@ const SearchField:React.FC<Props> = ({placholder,children}) => {
                       width: '9rem',
                       borderRadius: '10rem',
                       color: '#FFFFFF',
-                      backgroundColor: '#421e95',
+                      backgroundColor: '#6440FB',
                       padding: "1rem",
-                      border: 1,
-                      borderColor: '#421e95',
+                      border: 2,
+                      borderColor: '#6440FB',
                       transitionDuration: '.2s',
                       cursor: 'pointer',
-                      display: 'flex',
+                      display: {xs:'none' ,sm: 'none', md: 'flex' },
                       alignContent: 'center',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      '&:hover': { backgroundColor: '#f7f7f7', color: '#421e95' },
+                      '&:hover': { backgroundColor: '#f7f7f7', color: '#6440FB' },
                   }}
               >
                   {children}
               </Box>
+
+          </Box>
+          <Box
+              sx={{
+                  marginTop:'1rem',
+                  right: '1rem',
+                  height: "3rem",
+                  width: { xs: '22rem', sm: '25rem' },
+                  borderRadius: '10rem',
+                  color: '#FFFFFF',
+                  backgroundColor: '#6440FB',
+                  border: 2,
+                  borderColor: '#6440FB',
+                  transitionDuration: '.2s',
+                  cursor: 'pointer',
+                  display: { xs: 'flex',  sm: 'flex', md: 'none' },
+                  alignContent: 'center',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  '&:hover': { backgroundColor: 'transparent', color: '#6440FB' },
+              }}
+          >
+            {children}
 
           </Box>
     </div>

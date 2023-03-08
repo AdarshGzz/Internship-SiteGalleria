@@ -14,6 +14,7 @@ const CarouselBtn: FC<Props> = ({ children, onclick }) => {
                 variant='outlined'
                 // style={{ color: '#FFFFFF', hoverBackgroundColor: '#FFFF'}}
                 sx={{
+                    padding:'1',
                     height:'55px',
                     width:'40px',
                     border: 1,
@@ -21,7 +22,7 @@ const CarouselBtn: FC<Props> = ({ children, onclick }) => {
                     borderColor:'#ffffffbc',
                     color:"#fff",
                     borderRadius: '50%',
-                    display:{xs:'none',sm:'block'},
+                    display:{xs:'none',sm:'block',md:'block'},
                     '&:hover': {
                         backgroundColor:'#fff',
                         border: 1,

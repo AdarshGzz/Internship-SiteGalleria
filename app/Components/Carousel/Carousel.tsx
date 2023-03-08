@@ -40,18 +40,21 @@ const Carousel = () => {
             <Box
              sx={{
                 height: '100%',
-                width: '100%',
+                width: '100vw',
                 display:'flex',
                 justifyContent:'space-between',
                 alignItems: 'center',
-                paddingLeft: 5,
-                paddingRight: 5,
                 backgroundSize:'cover',
                 backgroundColor: '#732ed44d',
+                flex:'contain'
              }}
             >
               <CarouselBtn onclick={() => updateIndex(activeIdx - 1)}> <BsFillCaretLeftFill /> </CarouselBtn>
-              <Box>
+              <Box
+                sx={{
+                  width: '100%',
+                }}
+              >
                 <MiddleText/>
               </Box>
               <CarouselBtn onclick={() => updateIndex(activeIdx + 1)}> <BsFillCaretRightFill/> </CarouselBtn>
