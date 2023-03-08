@@ -26,7 +26,7 @@ function NavigationBar():JSX.Element {
 
   useEffect(() => {
     const handleScroll = () => {
-      const show = window.scrollY > 100
+      const show = window.scrollY > 5
       if (show) {
         setNavBackground(false)
       } else {

@@ -21,6 +21,7 @@ const CarouselBtn: FC<Props> = ({ children, onclick }) => {
                     borderColor:'#ffffffbc',
                     color:"#fff",
                     borderRadius: '50%',
+                    display:{xs:'none',sm:'block'},
                     '&:hover': {
                         backgroundColor:'#fff',
                         border: 1,

@@ -3,7 +3,9 @@ import React from "react";
 import { useState } from "react"
 import CarouselBtn from "./CarouselBtn";
 import CarouselBox from "./CarouselBox";
+import MiddleText from "./MiddleText";
 import { BsFillCaretRightFill, BsFillCaretLeftFill } from 'react-icons/bs'
+
 
 const bgArray = [
     'https://www.linkpicture.com/q/bg_57.png',
@@ -12,7 +14,7 @@ const bgArray = [
 ]
 
 
-import { Box ,Typography } from '@mui/material';
+import { Box } from '@mui/material';
 
 
 const Carousel = () => {
@@ -37,20 +39,24 @@ const Carousel = () => {
           <CarouselBox url = {url}>
             <Box
              sx={{
-                margin:5,
+                height: '100%',
+                width: '100%',
                 display:'flex',
                 justifyContent:'space-between',
                 alignItems: 'center',
-                paddingTop: 30,
                 paddingLeft: 5,
                 paddingRight: 5,
                 backgroundSize:'cover',
-                backgroundRepeat: 'no-repeat',
+                backgroundColor: '#732ed44d',
              }}
             >
               <CarouselBtn onclick={() => updateIndex(activeIdx - 1)}> <BsFillCaretLeftFill /> </CarouselBtn>
+              <Box>
+                <MiddleText/>
+              </Box>
               <CarouselBtn onclick={() => updateIndex(activeIdx + 1)}> <BsFillCaretRightFill/> </CarouselBtn>
             </Box>
+            
           </CarouselBox>
     </div>
   )

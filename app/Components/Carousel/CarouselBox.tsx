@@ -14,9 +14,8 @@ const CarouselBox: FC<Props> = ({ children, url }) => {
             <Box
                 sx={{
                     width: "100%",
-                    height: '90vh',
+                    height: { xs:'100vh' ,sm:'110vh', md:'80vh',lg:'110vh',xl:'110vh' },
                     backgroundImage: `url(${url})`,
-
                 }}
             >
             {children}
