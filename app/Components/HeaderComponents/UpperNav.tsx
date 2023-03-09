@@ -3,7 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import MailText from './UpperNavComponents/MailText';
-import SocialIcons from './UpperNavComponents/SocialIcons';
+import SocialIcons from '../Common/SocialIcons';
 
 import Select from './UpperNavComponents/Select'
 
