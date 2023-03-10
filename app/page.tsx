@@ -10,6 +10,7 @@ import CourseCard from './Components/Common/CourseCard';
 import EventCard from './Components/Common/EventCard';
 import PopularCourse from './Components/PopularCourse';
 import Dropdown from './Components/Common/Dropdown';
+import Glass from './Components/Glass';
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
           {/* <CourseCard/> */}
          {/* <EventCard/> */}
          <PopularCourse/>
+         <Glass/>
 
          {/* <Dropdown optionArray={['1','3']}>Filter</Dropdown> */}
          
