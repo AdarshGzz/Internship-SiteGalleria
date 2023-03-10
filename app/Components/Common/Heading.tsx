@@ -22,7 +22,7 @@ const Heading:React.FC<Props> = ({Subheading,Size, children}) => {
       <Box
         sx={{
             display:'flex',
-            flexDirection:'column'
+            flexDirection:'column',
         }}
       >
         <Typography

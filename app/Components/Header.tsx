@@ -5,7 +5,7 @@ import NavigationBar from './HeaderComponents/NavigationBar'
 
 function Header():JSX.Element {
   return (
-    <div className="flex flex-col sticky ">
+    <div className="flex flex-col sticky  z-10">
         <div className='relative'>
             <UpperNav />
         </div>

@@ -14,14 +14,14 @@ const CarouselBtn: FC<Props> = ({ children, onclick }) => {
                 variant='outlined'
                 // style={{ color: '#FFFFFF', hoverBackgroundColor: '#FFFF'}}
                 sx={{
-                    padding:'1',
-                    height:'55px',
-                    width:'40px',
+                    height:'4rem',
+                    width:'4rem',
                     border: 1,
+                    fontWeight:400,
                     backgroundColor:'#a5a5a55f',
                     borderColor:'#ffffffbc',
                     color:"#fff",
-                    borderRadius: '50%',
+                    borderRadius: '100px',
                     display:{xs:'none',sm:'block',md:'block'},
                     '&:hover': {
                         backgroundColor:'#fff',

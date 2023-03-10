@@ -4,7 +4,7 @@ import { useState } from "react"
 import CarouselBtn from "./CarouselBtn";
 import CarouselBox from "./CarouselBox";
 import MiddleText from "./MiddleText";
-import { BsFillCaretRightFill, BsFillCaretLeftFill } from 'react-icons/bs'
+import { BsArrowRight, BsArrowLeft } from 'react-icons/bs'
 
 
 const bgArray = [
@@ -46,10 +46,11 @@ const Carousel = () => {
                 alignItems: 'center',
                 backgroundSize:'cover',
                 backgroundColor: '#732ed44d',
-                flex:'contain'
+                flex:'contain',
+                padding:'1rem'
              }}
             >
-              <CarouselBtn onclick={() => updateIndex(activeIdx - 1)}> <BsFillCaretLeftFill /> </CarouselBtn>
+          <CarouselBtn onclick={() => updateIndex(activeIdx - 1)}> <BsArrowLeft /> </CarouselBtn>
               <Box
                 sx={{
                   width: '100%',
@@ -57,7 +58,7 @@ const Carousel = () => {
               >
                 <MiddleText/>
               </Box>
-              <CarouselBtn onclick={() => updateIndex(activeIdx + 1)}> <BsFillCaretRightFill/> </CarouselBtn>
+          <CarouselBtn onclick={() => updateIndex(activeIdx + 1)}> <BsArrowRight/> </CarouselBtn>
             </Box>
             
           </CarouselBox>

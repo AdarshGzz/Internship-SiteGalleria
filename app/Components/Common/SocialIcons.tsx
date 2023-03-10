@@ -1,18 +1,24 @@
 import React from 'react'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 import { Box } from '@mui/system';
-import Link from '@mui/material/Link';
 
 interface Props{
     Facebook?:string;
     Twitter?:string;
     Instagram?:string;
-    LinkedinIn?:string;
+    Linkedin?:string;
+    color?:string;
 }
 
-const SocialIcons:React.FC<Props> = ({Facebook, Twitter, Instagram, LinkedinIn}) => {
+const SocialIcons:React.FC<Props> = ({Facebook, Twitter, Instagram, Linkedin,color}) => {
 
-    const iconStyle = 'p-2 cursor-pointer '
+    const iconStyle = 'p-2 cursor-pointer'
+
+    let colr: string = 'white'
+    if (color) {
+        colr = color
+    }
+
 
   return (
     <Box
@@ -24,22 +30,22 @@ const SocialIcons:React.FC<Props> = ({Facebook, Twitter, Instagram, LinkedinIn})
     >
           <span className={`${iconStyle}`}>
               <a href={`${Facebook}`}>
-                  <FaFacebookF />
+                  <FaFacebookF color={`${colr}`} />
               </a>
           </span>
           <span className={`${iconStyle}`}>
               <a href={`${Twitter}`}>
-                  <FaTwitter />
+                  <FaTwitter color={`${colr}`} />
               </a>
           </span >
           <span className={`${iconStyle}`}>
               <a href={`${Instagram}`}>
-                  <FaInstagram />
+                  <FaInstagram color={`${colr}`} />
               </a>
           </span>
           <span className={`${iconStyle}`}>
-              <a href={`${LinkedinIn}`}>
-                  <FaLinkedinIn />
+              <a href={`${Linkedin}`}>
+                  <FaLinkedinIn color={`${colr}`} />
               </a>
           </span>
     </Box>

@@ -45,7 +45,7 @@ function NavigationBar():JSX.Element {
       <AppBar 
         position='sticky' 
         color={navBackground?"transparent":"primary"} 
-        sx={navBackground ? { bgcolor: '#1403400', boxShadow: 0 } : { bgcolor: '#140342', boxShadow: 0 }}
+        sx={navBackground ? { bgcolor: '#1403400', boxShadow: 0, height: '70px' } : { bgcolor: '#140342', boxShadow: 0, height: '70px' }}
       >
         <div className="flex flex-row">
           <IconButton>

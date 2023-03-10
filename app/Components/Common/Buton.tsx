@@ -14,12 +14,12 @@ interface Props{
 
 const Buton:React.FC<Props> = ({children,Height,Width,Color,FontSize,FontWeight,Rounded,Type}) => {
 
-  let H: string = '3.4rem'
-  let W:string = '15rem'
+  let H: string = '50px'
+  let W:string = '260px'
   let colr:string = '#6440FB'
-  let fntsz:string = '1.4rem'
+  let fntsz:string = '15'
   let fntwt:string = '300'
-  let radius:string = Type==='bullet'?'100px':Type==='box'?'8px':'2px'
+  let radius:string = Type==='bullet'?'100px':Type==='box'?'20px':'2px'
 
   if(Height){
     H = `${Height}rem`
@@ -54,8 +54,7 @@ const Buton:React.FC<Props> = ({children,Height,Width,Color,FontSize,FontWeight,
           display:'flex',
           alignItems:`center`,
           justifyContent:`center`,
-          padding:'14px 30px',
-          border:2.5,
+          border:'2px solid',
           borderColor:`${colr}`,
           transitionDuration:`.2s`,
           cursor:'pointer',
